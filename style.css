@@ -114,6 +114,7 @@ span{
 }
 /*MediaQuerys*/
 
+
 @media only screen and (max-width: 768px){
   body{
     background: red !important;
@@ -146,5 +147,48 @@ span{
   }
   .iconos{
     margin-right: 5px;
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+  body{
+    background: lightseagreen !important;
+  }
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto badges skills"
+      "info info skills"
+      "desPersonal desPersonal skills"
+      "experiencia experiencia skills"; 
+  }
+  .foto { grid-area: foto; }
+  .badges { grid-area: badges; }
+  .info { grid-area: info; }
+  .desPersonal { grid-area: desPersonal; }
+  .skills { grid-area: skills; }
+  .experiencia { grid-area: experiencia; }
+
+  #profilePic{
+    width: 250px;
+  }
+  progress{
+    width: 174px;
+  }
+  aside .level{
+    width: 80px;
+    height: 80px;
+    right: 10px;
+  }
+  .iconos{
+    margin-right: 5px;
+  }
+  .skills{
+    overflow: hidden;
   }
 }
