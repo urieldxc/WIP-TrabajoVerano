@@ -114,4 +114,37 @@ span{
 }
 /*MediaQuerys*/
 
-@media
+@media only screen and (max-width: 768px){
+  body{
+    background: red !important;
+    
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    margin: 0px !important;
+    grid-template-areas: 
+      "foto info"
+      "badges desPersonal"
+      "skills skills"
+      "experiencia experiencia" ;
+
+    max-width: 760px !important;
+  }
+
+  #profilePic{
+    width: 250px;
+  }
+  progress{
+    width: 174px;
+  }
+  aside .level{
+    width: 80px;
+    height: 80px;
+    right: 10px;
+  }
+  .iconos{
+    margin-right: 5px;
+  }
+}
