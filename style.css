@@ -114,4 +114,119 @@ span{
 }
 /*MediaQuerys*/
 
-@media
+
+@media only screen and (  max-width: 768px){
+
+  .container {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    margin: 0px !important;
+    grid-template-areas: 
+      "foto info"
+      "badges desPersonal"
+      "skills skills"
+      "experiencia experiencia" ;
+
+    max-width: 760px !important;
+  }
+
+  #profilePic{
+    width: 250px;
+  }
+  progress{
+    width: 174px;
+  }
+  aside .level{
+    width: 80px;
+    height: 80px;
+    right: 10px;
+  }
+  .iconos{
+    margin-right: 5px;
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto badges skills"
+      "info info skills"
+      "desPersonal desPersonal skills"
+      "experiencia experiencia skills"; 
+  }
+  .foto { grid-area: foto; }
+  .badges { grid-area: badges; }
+  .info { grid-area: info; }
+  .desPersonal { grid-area: desPersonal; }
+  .skills { grid-area: skills; }
+  .experiencia { grid-area: experiencia; }
+
+  #profilePic{
+    width: 250px;
+  }
+  progress{
+    width: 174px;
+  }
+  aside .level{
+    width: 80px;
+    height: 80px;
+    right: 0px;
+  }
+  .iconos{
+    margin-right: 5px;
+  }
+  .skills{
+    overflow: hidden;
+  }
+}
+
+
+
+@media only screen and (min-width: 1440px){
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto badges skills"
+      "info desPersonal skills"
+      "experiencia experiencia skills"; 
+  }
+  .foto { grid-area: foto; }
+  .badges { grid-area: badges; }
+  .info { grid-area: info; }
+  .desPersonal { grid-area: desPersonal; }
+  .skills { grid-area: skills; }
+  .experiencia { grid-area: experiencia; }
+  #profilePic{
+    width: 250px;
+  }
+  progress{
+    width: 174px;
+    left: 50px;
+  }
+  aside .level{
+    width: 80px;
+    height: 80px;
+    right: 50px;
+  }
+  .iconos{
+    margin-right: 5px;
+  }
+  .skills{
+    overflow: hidden;
+  }
+  #photoLevel{
+    padding-left:50px;
+    padding-right:50px;
+  }
+}
+
