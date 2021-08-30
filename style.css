@@ -229,4 +229,14 @@ span{
     padding-right:50px;
   }
 }
+.experiencia, .desPersonal, .info {
+  position: relative;
+}
 
+.sprite{
+  width: 610px;
+  height: 4vh;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+}
